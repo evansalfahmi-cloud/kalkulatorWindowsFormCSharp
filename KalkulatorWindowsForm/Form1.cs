@@ -16,5 +16,16 @@ namespace KalkulatorWindowsForm
         {
             InitializeComponent();
         }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            if (textBoxHasil.Text == "0")
+            {
+                textBoxHasil.Clear();
+            }
+
+            Button tombol = (Button) sender;
+            textBoxHasil.Text = textBoxHasil.Text + tombol.Text;
+        }
     }
 }
