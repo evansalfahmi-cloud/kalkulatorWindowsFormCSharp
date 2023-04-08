@@ -40,10 +40,20 @@ namespace KalkulatorWindowsForm
         private void operator_click(object sender, EventArgs e)
         {
             Button tombol = (Button)sender;
-            lakukanPenghitungan = tombol.Text;
-            nilaiHasil = Double.Parse(textBoxHasil.Text);
-            labelSedangDihitung.Text = nilaiHasil + " " + lakukanPenghitungan;
-            apakahLakukanPenghitungan = true;
+
+            if (nilaiHasil != 0){
+                tombolSamaDengan.PerformClick();
+                lakukanPenghitungan = tombol.Text;
+                labelSedangDihitung.Text = nilaiHasil + " " + lakukanPenghitungan;
+                apakahLakukanPenghitungan = true;
+            } else {
+                lakukanPenghitungan = tombol.Text;
+                nilaiHasil = Double.Parse(textBoxHasil.Text);
+                labelSedangDihitung.Text = nilaiHasil + " " + lakukanPenghitungan;
+                apakahLakukanPenghitungan = true;
+            }
+
+           
         }
 
         private void tombolCE_Click(object sender, EventArgs e)
@@ -55,6 +65,7 @@ namespace KalkulatorWindowsForm
         {
             textBoxHasil.Text = "0";
             nilaiHasil = 0;
+            labelSedangDihitung.Text = " ";
         }
 
         private void tombolSamaDengan_Click(object sender, EventArgs e)
@@ -75,6 +86,8 @@ namespace KalkulatorWindowsForm
                 default:
                 break;
             }
+            nilaiHasil = Double.Parse(textBoxHasil.Text);
+            labelSedangDihitung.Text = "";
         }
     }
 }
