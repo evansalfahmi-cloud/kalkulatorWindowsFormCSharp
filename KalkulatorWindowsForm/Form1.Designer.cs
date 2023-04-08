@@ -48,7 +48,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.textBoxHasil = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelSedangDihitung = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -258,22 +258,22 @@
             this.textBoxHasil.Text = "0";
             this.textBoxHasil.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label1
+            // labelSedangDihitung
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 19);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "label1";
+            this.labelSedangDihitung.AutoSize = true;
+            this.labelSedangDihitung.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSedangDihitung.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.labelSedangDihitung.Location = new System.Drawing.Point(4, 22);
+            this.labelSedangDihitung.Name = "labelSedangDihitung";
+            this.labelSedangDihitung.Size = new System.Drawing.Size(0, 19);
+            this.labelSedangDihitung.TabIndex = 21;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 318);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelSedangDihitung);
             this.Controls.Add(this.textBoxHasil);
             this.Controls.Add(this.tombolSamaDengan);
             this.Controls.Add(this.button17);
@@ -325,7 +325,7 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.TextBox textBoxHasil;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSedangDihitung;
     }
 }
 

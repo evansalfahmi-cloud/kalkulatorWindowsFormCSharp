@@ -22,10 +22,12 @@ namespace KalkulatorWindowsForm
 
         private void button_click(object sender, EventArgs e)
         {
-            if (textBoxHasil.Text == "0")
+            if ((textBoxHasil.Text == "0") || (apakahLakukanPenghitungan))
             {
                 textBoxHasil.Clear();
+                
             }
+                apakahLakukanPenghitungan = false;
 
             Button tombol = (Button) sender;
             textBoxHasil.Text = textBoxHasil.Text + tombol.Text;
@@ -36,6 +38,8 @@ namespace KalkulatorWindowsForm
             Button tombol = (Button)sender;
             lakukanPenghitungan = tombol.Text;
             nilaiHasil = Double.Parse(textBoxHasil.Text);
+            labelSedangDihitung.Text = nilaiHasil + " " + lakukanPenghitungan;
+            apakahLakukanPenghitungan = true;
         }
 
         private void tombolCE_Click(object sender, EventArgs e)
@@ -56,13 +60,13 @@ namespace KalkulatorWindowsForm
                 textBoxHasil.Text = (nilaiHasil + Double.Parse(textBoxHasil.Text)).ToString() ;
                 break;
                 case "-": 
-                textBoxHasil.Text = (nilaiHasil + Double.Parse(textBoxHasil.Text)).ToString() ;
+                textBoxHasil.Text = (nilaiHasil - Double.Parse(textBoxHasil.Text)).ToString() ;
                 break;
                 case "/":
-                textBoxHasil.Text = (nilaiHasil + Double.Parse(textBoxHasil.Text)).ToString() ;
+                textBoxHasil.Text = (nilaiHasil / Double.Parse(textBoxHasil.Text)).ToString() ;
                 break;
                 case "*":
-                textBoxHasil.Text = (nilaiHasil + Double.Parse(textBoxHasil.Text)).ToString() ;
+                textBoxHasil.Text = (nilaiHasil * Double.Parse(textBoxHasil.Text)).ToString() ;
                 break;
                 default:
                 break;
