@@ -33,8 +33,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.tombolCE = new System.Windows.Forms.Button();
+            this.tombolC = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -43,7 +43,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.tombolSamaDengan = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
@@ -93,26 +93,29 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "/";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.operator_click);
             // 
-            // button5
+            // tombolCE
             // 
-            this.button5.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(224, 77);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(48, 48);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "CE";
-            this.button5.UseVisualStyleBackColor = true;
+            this.tombolCE.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tombolCE.Location = new System.Drawing.Point(224, 77);
+            this.tombolCE.Name = "tombolCE";
+            this.tombolCE.Size = new System.Drawing.Size(48, 48);
+            this.tombolCE.TabIndex = 4;
+            this.tombolCE.Text = "CE";
+            this.tombolCE.UseVisualStyleBackColor = true;
+            this.tombolCE.Click += new System.EventHandler(this.tombolCE_Click);
             // 
-            // button6
+            // tombolC
             // 
-            this.button6.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(224, 131);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(48, 48);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "C";
-            this.button6.UseVisualStyleBackColor = true;
+            this.tombolC.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tombolC.Location = new System.Drawing.Point(224, 131);
+            this.tombolC.Name = "tombolC";
+            this.tombolC.Size = new System.Drawing.Size(48, 48);
+            this.tombolC.TabIndex = 9;
+            this.tombolC.Text = "C";
+            this.tombolC.UseVisualStyleBackColor = true;
+            this.tombolC.Click += new System.EventHandler(this.tombolC_Click);
             // 
             // button7
             // 
@@ -123,6 +126,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "*";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.operator_click);
             // 
             // button8
             // 
@@ -166,6 +170,7 @@
             this.button12.TabIndex = 13;
             this.button12.Text = "-";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.operator_click);
             // 
             // button13
             // 
@@ -200,15 +205,16 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button_click);
             // 
-            // button16
+            // tombolSamaDengan
             // 
-            this.button16.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(224, 185);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(48, 102);
-            this.button16.TabIndex = 19;
-            this.button16.Text = "=";
-            this.button16.UseVisualStyleBackColor = true;
+            this.tombolSamaDengan.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tombolSamaDengan.Location = new System.Drawing.Point(224, 185);
+            this.tombolSamaDengan.Name = "tombolSamaDengan";
+            this.tombolSamaDengan.Size = new System.Drawing.Size(48, 102);
+            this.tombolSamaDengan.TabIndex = 19;
+            this.tombolSamaDengan.Text = "=";
+            this.tombolSamaDengan.UseVisualStyleBackColor = true;
+            this.tombolSamaDengan.Click += new System.EventHandler(this.tombolSamaDengan_Click);
             // 
             // button17
             // 
@@ -219,6 +225,7 @@
             this.button17.TabIndex = 18;
             this.button17.Text = "+";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.operator_click);
             // 
             // button18
             // 
@@ -268,7 +275,7 @@
             this.ClientSize = new System.Drawing.Size(281, 318);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxHasil);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.tombolSamaDengan);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button20);
@@ -276,12 +283,12 @@
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button15);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.tombolC);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.tombolCE);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -303,8 +310,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button tombolCE;
+        private System.Windows.Forms.Button tombolC;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
@@ -313,7 +320,7 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button tombolSamaDengan;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button20;
