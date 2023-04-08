@@ -30,6 +30,10 @@ namespace KalkulatorWindowsForm
                 apakahLakukanPenghitungan = false;
 
             Button tombol = (Button) sender;
+            if (tombol.Text == "."){
+                if (!textBoxHasil.Text.Contains("."))
+                textBoxHasil.Text = textBoxHasil.Text + tombol.Text;
+            }else
             textBoxHasil.Text = textBoxHasil.Text + tombol.Text;
         }
 
