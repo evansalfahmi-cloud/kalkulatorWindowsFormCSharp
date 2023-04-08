@@ -1,0 +1,9 @@
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\bin\Debug\KalkulatorWindowsForm.exe.config
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\bin\Debug\KalkulatorWindowsForm.exe
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\bin\Debug\KalkulatorWindowsForm.pdb
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\obj\Debug\KalkulatorWindowsForm.csprojResolveAssemblyReference.cache
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\obj\Debug\KalkulatorWindowsForm.Form1.resources
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\obj\Debug\KalkulatorWindowsForm.Properties.Resources.resources
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\obj\Debug\KalkulatorWindowsForm.csproj.GenerateResource.Cache
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\obj\Debug\KalkulatorWindowsForm.exe
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\KalkulatorWindowsForm\KalkulatorWindowsForm\obj\Debug\KalkulatorWindowsForm.pdb
